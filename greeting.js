@@ -1,8 +1,8 @@
-goodMorning= function(){
-     var name = process.argv.pop();
-    console.log('Good morning '+ name);
-    process.argv.push(name);
-    return('Good morning '+ name);
+goodMorning= function(name){
+    console.log('Good morning, '+name+'.');
+    return('Good morning, '+name+'.');
 };
+
+goodMorning('Dave');
 
 module.exports = goodMorning;

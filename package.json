@@ -2,7 +2,7 @@
   "name": "greeting-app",
   "version": "1.0.0",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "dependencies": {
     "commander": "^2.9.0",
     "mocha": "^3.1.2",
@@ -13,8 +13,10 @@
     "mocha": "^3.1.2"
   },
   "scripts": {
-    "test": "mocha .test/tableTest.js",
-
+    "test": "mocha .test/tableTest.js"
+  },
+  "bin": {
+    "tableApp": "index.js"
   },
   "repository": {
     "type": "git",
